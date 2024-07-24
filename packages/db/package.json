@@ -8,12 +8,16 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies":{
-    "@prisma/client": "5.16.2"
+  "dependencies": {
+    "@prisma/client": "^5.16.2",
+    "@repo/db": "*",
+    "psql": "^0.0.1"
   },
-  "dev-dependencies":{"prisma":"5.16.2"},
+  "dev-dependencies": {
+    "prisma": "5.16.2"
+  },
   "description": "",
-  "exports":{
-    "./client":"./index.ts"
+  "exports": {
+    "./client": "./index.ts"
   }
 }
