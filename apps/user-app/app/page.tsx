@@ -1,21 +1,15 @@
 "use client"
 
-import Image from "next/image";
-import { Button } from "@repo/ui/button";
-import styles from "./page.module.css";
-import {useBalance} from "@repo/store/balance"
-import { Providers } from "../../providers";
+import {signIn,signOut,useSession} from "next-auth/react"
+import {Appbar} from "@repo/ui/appbar"
 
 
 
-export default function Home() {
-  const balance=useBalance();
+export default function Page():JSX.Element {
+  const session=useSession();
   return (
     <div>
-      <Providers>
-        hi there {balance}
-      </Providers>
-     
+      <Appbar onSignin={signIn} onSignout={signOut} user={session.data?.user} />
     </div>
   );
 }
