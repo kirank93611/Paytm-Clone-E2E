@@ -19,6 +19,9 @@
     "./client": "./index.ts"
   },
   "prisma": {
-        "seed": "ts-node prisma/seed.ts"
-    }
+    "seed": "ts-node prisma/seed.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0"
+  }
 }

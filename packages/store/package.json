@@ -7,6 +7,9 @@
   "dependencies": {
     "recoil": "^0.7.7"
   },
+  "devDependencies": {
+     "recoil": "^0.7.7"
+  },
   "exports": {
     "./balance": "./src/hooks/useBalance"
   }
